@@ -11,3 +11,9 @@ $touch : to creat new file .
 $cat : to add values into file 
 
 ----------
+
+#second part 
+
+cp : copy files
+
+mkdir: making directory
