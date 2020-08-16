@@ -1,0 +1,9 @@
+$ls : to list all items in the same directory . 
+
+$cd : to change from directory to another one . 
+
+$pwd: to know the present wroking directory
+
+$touch : to creat new file .
+
+$cat : to add values into file 
