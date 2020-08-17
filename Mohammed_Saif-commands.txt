@@ -17,3 +17,9 @@ $cat : to add values into file
 cp : copy files
 
 mkdir: making directory
+
+rmdir: delete directory
+
+rm : remove file 
+
+-----------
