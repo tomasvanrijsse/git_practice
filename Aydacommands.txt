@@ -1,9 +1,9 @@
 Git commands
 
-git init
-git status
-git pull
-git fetch origin
-git checkout master
-git push -f
-git rebase --continue
+git init - creates an empty Git repository or reinitializes the existing one.
+git status - displays the state of the working directory and the staging area.
+git pull - used to fetch and download  content from remote repository.
+git fetch origin - used to update remote tracking branches under remote.
+git checkout master -  switch to master
+git push -f  - push from local to remote using force option.
+git rebase - reapply commits on top of another
