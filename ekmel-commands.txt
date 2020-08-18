@@ -1,5 +1,18 @@
-git init  >>  to initialize local git repo
-git status  >>  to learn which files are in staging area or not
-git add -A  >>  to add all files to staging area
-git add [filename]  >>  to add a specific file to staging area
-git commit -m "message"  >>  to commit changes with a message
+First commit
+git init  -->  to initialize local git repo
+git status  -->  to learn which files are in staging area or not
+git add -A  -->  to add all files to staging area
+git add [filename]  -->  to add a specific file to staging area
+git commit -m "message"  -->  to commit changes with a message
+
+----------------------------------------------------------------
+
+Second commit
+git clone [repo]  [where to clone in local]  -->  to clone a repo to local
+git add .  -->  to add all files to staging area
+git reset  -->  to remove all files from staging area
+git reset [filename]  -->  to remove a specific file from staging area
+git log  -->  to list version history for the current branch, who / when commited
+git log -p  -->  to see what changed in each commit
+
+----------------------------------------------------------------
