@@ -1,0 +1,127 @@
+/* ******* Creating hidden files and directories ******** */
+
+     /* List the contents of week1 directory */
+
+$ ls
+CommandLineChallenge.txt
+
+    /* List again with '-a' flag to show all files in directory (also hidden ones) */
+
+$ ls -a
+.				CommandLineChallenge.txt
+..
+
+    /* Create a hidden file '.hiddenFile.txt' */
+    /* Filenames starting with '.' are inferred as hidden by UNIX-like OS's */
+
+$ touch .hiddenFile.txt
+
+    /* List the directory again to show non-hidden files */
+
+$ ls
+CommandLineChallenge.txt
+
+    /* List again with -a flag to show all files in directory */
+    /* Now .hiddenFile.txt is being shown */
+
+$ ls -a
+.				.hiddenFile.txt
+..				CommandLineChallenge.txt
+
+    /* Create hidden directory in a similar way */
+
+$ mkdir .hiddenDirectory
+
+    /* List non-hidden files and folders in 'week1' */
+
+$ ls
+CommandLineChallenge.txt
+
+    /* List with '-a' flag to show all files in 'week1' */
+    /* Now '.hiddenFile.txt' and '.hiddenDirectory' are being shown */
+
+$ ls -a
+.				.hiddenFile.txt
+..				CommandLineChallenge.txt
+.hiddenDirectory
+
+
+
+
+/* ******** Creating multiple nested directories ******** */
+
+    /* see what is the current folder (=directory) */
+$ pwd
+/Users/aleks/desktop/hyf-html-exercises/week1
+
+    /* see the folder contents */
+$ ls
+CommandLineChallenge.txt
+
+   /* and including hidden files and folders */
+
+$ ls -a
+.				.hiddenFile.txt
+..				CommandLineChallenge.txt
+.hiddenDirectory
+
+    /* Create nested folders inside the current '.'
+    The '-p' flag allows to do so */
+
+$ mkdir -p ./c/Users/myusername/these/folders/are/just/for/fun/
+$ ls
+CommandLineChallenge.txt	c
+
+    /* To prove that all folders were created, 'find' all  
+    the folders '-type d' in the current location (.) and print 
+    their names '-print'  */
+
+$ find . -type d -print
+.
+./.hiddenDirectory
+./c
+./c/Users
+./c/Users/myusername
+./c/Users/myusername/these
+./c/Users/myusername/these/folders
+./c/Users/myusername/these/folders/are
+./c/Users/myusername/these/folders/are/just
+./c/Users/myusername/these/folders/are/just/for
+./c/Users/myusername/these/folders/are/just/for/fun
+
+
+
+
+/* ******** Appending a message to a file, without explicitly 
+                        putting a trailing newline character ******** */
+
+    /* Check what is the current directory */
+$ pwd
+/Users/aleks/desktop/hyf-html-exercises/week1
+
+    /* List the folder's contents */
+$ ls
+CommandLineChallenge.txt	c
+
+    /* The 'echo' command sends its argument (string) to standard 
+    output (usually terminal window) placing trailing new line character.
+    The '>>' modifier (arrow) points to the file where to redirect the output.
+    If file does not exist, it is being created. If file exists, the data
+    is added to the end of the file */
+
+$ echo "first message" >> messages.txt
+$ echo "second message" >> messages.txt
+$ echo "third message" >> messages.txt
+
+    /* Check that 'messages.txt' was created */
+
+$ ls
+CommandLineChallenge.txt	messages.txt
+c
+
+    /* Show the contents of 'messages.txt' */
+    
+$ cat messages.txt 
+first message
+second message
+third message
