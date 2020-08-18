@@ -1,0 +1,16 @@
+cd -> to change directory.
+cd .. -> to go one directory back.
+cd ../.. -> to go two directories back.
+ls -> to list files in current directory.
+ls -a -> list files including hidden ones.
+ls -lah -> list files as a list.
+echo "" > -> overrides existing message (if any) and adds new message.
+echo ""  >> -> appends a message.
+vim -> allows us to edit a file. Once in we use "i" to insert message(s).
+nano -> also for editing files. 
+mkdir -> makes new directory.
+mkdir . -> the dot indicate the file will be hidden.
+mkdir -p -> creates nested directories.
+touch -> if inexistent file is typed, it creates it as a new/empty one.
+mv -> moves a file and also changes name. Example: mv file.txt newname.txt = will change to newname.txt. Whereas mv newname.txt directory/ = moves the file to directory folder.
+cp -> to copy a file. In addition we can create a backup with {.,bkp}
