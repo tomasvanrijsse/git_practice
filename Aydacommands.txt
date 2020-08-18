@@ -1,0 +1,9 @@
+Git commands
+
+git init
+git status
+git pull
+git fetch origin
+git checkout master
+git push -f
+git rebase --continue
